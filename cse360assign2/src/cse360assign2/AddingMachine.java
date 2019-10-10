@@ -5,7 +5,7 @@ package cse360assign2;
  * 
  * @author Rachel DeMaria
  * @param value input integer that is to be manipulated mathematically 
- * @return Total: (String) returns the Total variable in the format of a string
+ * @return Total: (Integer) returns the Total integer 
  * */
 
 public class AddingMachine {
@@ -23,12 +23,12 @@ public class AddingMachine {
 	
 	public void add (int value) {
 		total = total + value;
-		string = " + " + value;
+		string = string + " + " + value;
 	}
 	
 	public void subtract (int value) {
 		total = total - value;
-		string = " - " + value;
+		string = string + " - " + value;
 	}
 	
 	public String toString () {
@@ -36,7 +36,7 @@ public class AddingMachine {
 		}
 	
 	public void clear() {
-		
+		total = 0;
 	}
 }
 
